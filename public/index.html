@@ -1,16 +1,22 @@
 <html>
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134334833-1"></script> -->
-    <!-- <script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-134334833-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-	gtag('config', 'UA-134334833-1');
-	</script> -->
+      gtag('config', 'UA-134334833-1');
+    </script>
     <base href="" />
-    <title>Assistente Virtual ARISP</title>
+    <title>Assistente Virtual</title>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta property="og:image" content="conversation.svg" />
@@ -19,6 +25,7 @@
       property="og:description"
       content="Sample application that shows how to use the Watson Assistant API to identify user intents"
     />
+
     <link rel="shortcut icon" href="favicon.png" type="image/png" />
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="/style/style.css" />
@@ -36,20 +43,19 @@
             <div class="assistente">
               <h3>
                 <span>
-                  Assistente Virtual
-                  <br />
-                  ARISP
+                  Assistente Virtual MindBots
                 </span>
               </h3>
             </div>
             <div class="ari"></div>
-            <div class="logo"></div>
           </div>
           <div id="scrollingChat">
             <!--  Estou Off-line: 
+
+
 <div class="options-button" onclick="javascript:window.open('http://chat.movidesk.com/ChatWidget/Login/E58B7603783C401F9B2A9BCDF9875A66?Name=&Email=&PhoneNumber=&CodeReference=&OrganizationCodeReference=&StayConnected=true&EmptySubject=false&StartChat=false', 'bot', 'resizable=no,toolbar=no,scrollbars=yes,menubar=no,status=no,directories=no,width=500,height=610,left=1000,top=100');void(0);">         <i class="fa fa-comments fa-2x" aria-hidden="true"></i>Teclar com atendente</div> 
-         -->
-          </div>
+ 
+        --></div>
           <p class="user-typing" id="user-typing-field"></p>
           <div class="inputOutline">
             <input
@@ -67,6 +73,11 @@
               onclick="ConversationPanel.buttonSendMessage()"
             />
           </div>
+          <div class="copyright" id="copyright">
+            <span>
+              © 2019 - Desenvolvido por
+            </span>
+          </div>
           <div class="disclaimer"></div>
         </div>
       </div>
@@ -78,7 +89,6 @@
         <div id="payload-response" class="payload"></div>
       </div>
     </div>
-
     <script src="js/common.js"></script>
     <script src="js/api.js"></script>
     <script src="js/conversation.js"></script>

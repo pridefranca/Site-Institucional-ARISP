@@ -1,5 +1,5 @@
 applications:
-- name: Site-ARISP
+- name: Mind
   command: npm start
   path: .
   memory: 512M
